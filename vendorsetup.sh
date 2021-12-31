@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TARGET_ARCH="arm64"
    	export OF_AB_DEVICE="1"
    	export TW_DEFAULT_LANGUAGE="en"
-	export OF_SCREEN_H="2028"
+	export OF_SCREEN_H="1920"
     #export OF_STATUS_H="83"
 	export OF_HIDE_NOTCH="0"
 	#export OF_NO_SPLASH_CHANGE="1"
