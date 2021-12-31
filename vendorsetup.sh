@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TARGET_ARCH="arm64"
    	export OF_AB_DEVICE="1"
    	export TW_DEFAULT_LANGUAGE="en"
-	#export OF_SCREEN_H="2340"
+	export OF_SCREEN_H="2028"
     #export OF_STATUS_H="83"
 	export OF_HIDE_NOTCH="0"
 	#export OF_NO_SPLASH_CHANGE="1"
@@ -54,7 +54,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_VANILLA_BUILD="0"
 	export OF_DISABLE_UPDATEZIP="1"
 	export OF_FLASHLIGHT_ENABLE="1"
-	#export OF_FL_PATH1="/system_root/system/flashlight_core"
+	export OF_FL_PATH1="/sys/class/leds/led_torch_1"
 	export OF_TWRP_COMPATIBILITY_MODE="1"
 	export OF_NO_SAMSUNG_SPECIAL"1"
     export OF_DONT_PATCH_ON_FRESH_INSTALLATION="1"
@@ -82,7 +82,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         # -- add settings for R11 --
         export OF_USE_TWRP_SAR_DETECT="1"
         export OF_DISABLE_MIUI_OTA_BY_DEFAULT="1"
-        export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
+        export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;"
         # -- end R11 settings --
 
 	# let's see what are our build VARs
